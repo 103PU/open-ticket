@@ -1,0 +1,55 @@
+{
+    "name": "open-ticket",
+    "author": "DJdj Development",
+    "version": "4.2.2",
+    "description": "The most advanced open-source discord ticket bot with HTML transcripts, plugins, questions, claiming, pinning & more! Using discord.js v14 & JSON database! ",
+    "keywords": [
+        "ticket-bot",
+        "discord",
+        "open-ticket",
+        "plugins",
+        "discord-ticket-bot"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "build": "node index.js --compile-only",
+        "start": "node index.js",
+        "setup": "node index.js --cli",
+        "startnc": "node index.js --no-compile",
+        "test": "node index.js --dev-config --dev-database --soft-plugins",
+        "testsetup": "node index.js --cli --dev-config --dev-database --soft-plugins",
+        "testnc": "node index.js --no-compile --dev-config --dev-database --soft-plugins",
+        "tools:mergelang": "bun run .tools/mergeTranslations.js",
+        "docker:build": ".tools/build-docker.sh djj123dj/open-ticket --no-push"
+    },
+    "type": "module",
+    "license": "GPL-3.0-only",
+    "dependencies": {
+        "@discordjs/rest": "^2.6.1",
+        "@open-discord-bots/framework": "^2.0.7",
+        "@types/node": "^22.5.0",
+        "@types/terminal-kit": "^2.5.7",
+        "ansis": "^4.2.0",
+        "discord.js": "^14.26.4",
+        "formatted-json-stringify": "^1.3.2",
+        "terminal-kit": "^3.1.2",
+        "typescript": "^6.0.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/open-discord-bots/open-ticket.git"
+    },
+    "bugs": {
+        "url": "https://github.com/open-discord-bots/open-ticket/issues",
+        "email": "support@dj-dj.be"
+    },
+    "homepage": "https://openticket.dj-dj.be",
+    "imports": {
+        "#opendiscord": "./dist/src/index.js",
+        "#opendiscord-types": "./dist/src/core/api.js"
+    },
+    "funding": {
+        "type": "individual",
+        "url": "https://github.com/sponsors/DJj123dj"
+    }
+}

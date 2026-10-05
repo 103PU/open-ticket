@@ -1,0 +1,14 @@
+# Docker Compose for Open Ticket
+services:
+  openticket:
+    image: djj123dj/open-ticket:latest
+    volumes:
+      - config:/home/container/config
+      - database:/home/container/database
+      - plugins:/home/container/plugins
+    restart: unless-stopped
+    container_name: open-ticket
+volumes:
+  config:
+  database:
+  plugins:

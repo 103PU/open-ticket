@@ -11,15 +11,15 @@
     {
         /* A ticket option creates a button to open a ticket. */
         "id":"example-ticket",
-        "name":"Question",
-        "description":"Want to tell us something? Create this ticket for general questions for our support team.", //Leave empty to disable
+        "name":"Gọi hỗ trợ",
+        "description":"", //Leave empty to disable
         "type":"ticket",
         
         "button":{
             /* Configure the button style of this option. At least one of "emoji" or "label" must be provided. */
-            "emoji":"🎫",
-            "label":"Question",
-            "color":"gray" //Choices: gray, red, green, blue
+            "emoji":"📩",
+            "label":"Gọi hỗ trợ",
+            "color":"green" //Choices: gray, red, green, blue
         },
         
         /* Add up to 5 modal questions IDs from (config/questions.jsonc). */

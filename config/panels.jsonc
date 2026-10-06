@@ -17,25 +17,23 @@
         "dropdown":false,
         
         /* Add up to 5 option IDs from (config/options.jsonc). */
-        "options":["example-ticket","example-website"],
+        "options":["example-ticket"],
         
         "text":"", //Leave empty to disable
         "embed":{
             "enabled":true,
-            "title":"Tickets:", //Leave empty to disable
-            "description":"Create a ticket by selecting one of the options below. Once selected, a private ticket will be created for you and our support team will be able to assist you directly.", //Leave empty to disable
+            "title":"💈 Bạn đang cần được hỗ trợ ! 🔮", //Leave empty to disable
+            "description":"Để được tư vấn và hỗ trợ, vui lòng click vào 📩", //Leave empty to disable
             
-            "customColor":"#f8ab00", //Leave empty to use default color
+            "customColor":"#2ecc71", //Leave empty to use default color
             "url":"", //URL. Leave empty to disable
             
-            "image":"", //Image URL. Leave empty to disable
+            "image":"", //Dán URL ảnh banner vào đây nếu muốn hiển thị ảnh như mẫu
             "thumbnail":"", //Image URL. Leave empty to disable
             
-            "footer":"Open Ticket v4.2.2", //Leave empty to disable
+            "footer":"", //Leave empty to disable
             /* Embed fields. Set to empty list [] to disable. */
-            "fields":[
-                {"name":"Field name","value":"Field value","inline":false}
-            ],
+            "fields":[],
             "timestamp":false
         },
         "settings":{

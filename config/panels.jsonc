@@ -17,7 +17,7 @@
         "dropdown":false,
         
         /* Add up to 5 option IDs from (config/options.jsonc). */
-        "options":["example-ticket","example-website","example-role"],
+        "options":["example-ticket","example-website"],
         
         "text":"", //Leave empty to disable
         "embed":{

@@ -25,15 +25,15 @@
         /* Add up to 5 modal questions IDs from (config/questions.jsonc). */
         "questions":["example-question-1","example-question-2"],
         
-        "ticketAdmins":["DISCORD_ROLE_ID"],
-        "readonlyAdmins":["DISCORD_ROLE_ID"],
+        "ticketAdmins":["1214229913582837790"],
+        "readonlyAdmins":[],
         "allowCreationByBlacklistedUsers":false,
         
         "channel":{
             /* Configure the name, topic and category of the ticket option. */
-            "prefix":"question-",
+            "prefix":"ticket-",
             "suffix":"user-name", //Choices: user-name, user-id, random-number, random-hex, counter-dynamic, counter-fixed
-            "category":"DISCORD_CATEGORY_ID", //Leave empty to disable
+            "category":"1214627175068602448", //Leave empty to disable
             "topic":"The ticket topic shown in the channel." //Leave empty to disable
         },
         
@@ -76,9 +76,9 @@
             },
             "ping":{
                 /* Customise the user & role mentions of this ticket message. */
-                "@here":true,
+                "@here":false,
                 "@everyone":false,
-                "custom":["DISCORD_ROLE_ID"]
+                "custom":["1214229913582837790"]
             }
         },
         "autoclose":{
@@ -126,40 +126,5 @@
         },
         
         "url":"https://www.dj-dj.be"
-    },
-    {
-        /* A reaction-role option creates a button for members to choose roles. */
-        "id":"example-role",
-        "name":"Update Ping",
-        "description":"Receive notifications about updates in our server.", //Leave empty to disable
-        "type":"role",
-        
-        "button":{
-            /* Configure the button style of this option. At least one of "emoji" or "label" must be provided. */
-            "emoji":"📢",
-            "label":"Update Ping",
-            "color":"gray" //Choices: gray, red, green, blue
-        },
-        
-        "roles":["DISCORD_ROLE_ID"],
-        "mode":"add&remove OR remove OR add", //What to do with the roles. Choices: add&remove, add, remove
-        "removeRolesOnAdd":["DISCORD_ROLE_ID"], //Remove these old roles when new roles are added.
-        "addOnMemberJoin":false //Add these roles automatically when joining the server.
-    },
-    {
-        /* A sub-panel option creates a button which sends another panel for additional options. */
-        "id":"example-sub-panel",
-        "name":"Example Sub-Panel",
-        "description":"This is an example of how to implement a sub-panel in Open Ticket.", //Leave empty to disable
-        "type":"sub-panel",
-        
-        "button":{
-            /* Configure the button style of this option. At least one of "emoji" or "label" must be provided. */
-            "emoji":"📋",
-            "label":"Sub-Panel Example",
-            "color":"gray" //Choices: gray, red, green, blue
-        },
-        
-        "subPanelId":"example-panel" //Choose a panel ID from (config/panels.jsonc)
     }
 ]

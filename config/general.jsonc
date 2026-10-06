@@ -25,10 +25,10 @@
     "tokenFromENV":true,
     
     "mainColor":"#f8ba00", //Hex color used in most embeds
-    "language":"english", //Visit README.md for list
+    "language":"vietnamese", //Visit README.md for list
     "prefix":"!ticket ", //Prefix used in text commands
-    "serverId":"DISCORD_SERVER_ID",
-    "globalAdmins":["DISCORD_ROLE_ID"], //Have access to all commands
+    "serverId":"1209942532511764580",
+    "globalAdmins":["1214229913582837790"], //Have access to all commands
     
     /* Enable/disable text or slash commands. */
     "slashCommands":true,
@@ -46,7 +46,7 @@
     /* Send ticket logs to a channel or in DM of the ticket creator. */
     "logs":{
         "enabled":false,
-        "channel":"DISCORD_CHANNEL_ID",
+        "channel":"1209942532965011549",
         "logMessages":{
             "creation":{"dm":false,"logs":true},
             "closing":{"dm":false,"logs":true},
@@ -124,18 +124,18 @@
         /* Move closed tickets to a separate category. */
         "closedCategory":{
             "enabled":false,
-            "categoryId":"DISCORD_CATEGORY_ID"
+            "categoryId":""
         },
         
         /* Create tickets in a backup category when the original category exceeds 50 channels. */
         "backupCategory":{
             "enabled":false,
-            "categoryId":"DISCORD_CATEGORY_ID"
+            "categoryId":""
         },
         
         /* Move claimed tickets to a matching category of the user that claimed the ticket. Set to empty list [] to disable. */
         "claimedCategories":[
-            {"user":"DISCORD_USER_ID","category":"DISCORD_CATEGORY_ID"}
+            // {"user":"DISCORD_USER_ID","category":"DISCORD_CATEGORY_ID"}
         ]
     },
     
